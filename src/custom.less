@@ -1,0 +1,176 @@
+// 修改位置布局
+.ant-layout-sider {
+  position: fixed;
+  top: 0x;
+  min-height: calc(100vh - 90px);
+  background: linear-gradient(0deg, #389466, #42b883);
+  margin-left: 20px;
+  border-radius: 5px;
+  margin-top: 82px;
+  box-shadow: 0 0 45px 0 rgb(0 0 0 / 60%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #2da979;
+    top: -5px;
+    left: 40px;
+    transform: translate(-50%);
+  }
+}
+
+// logo修改
+.ant-pro-sider-menu-logo {
+  background: transparent;
+  padding: 0.5rem 0.7rem 1rem;
+  line-height: 30px;
+  height: auto;
+  white-space: nowrap;
+
+  img {
+    width: 34px;
+    max-width: 34px;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: auto;
+    padding: 0.5rem 0;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    height: 1px;
+    width: calc(100% - 30px);
+    background: hsla(0, 0%, 100%, 0.5);
+  }
+}
+
+.ant-menu-dark.ant-menu-inline {
+  margin-top: 20px;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  box-shadow: none;
+  margin-top: 5px;
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-submenu-title,
+.ant-menu-dark.ant-menu-inline .ant-menu-item {
+  margin: 10px 15px 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.62475rem;
+  line-height: 1.625rem;
+  padding: 10px 8px !important;
+  width: auto;
+  height: auto;
+}
+
+.ant-menu-inline .ant-menu-submenu-title {
+  overflow: visible;
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-item {
+  margin: 0 15px !important;
+  padding: 8px !important;
+  overflow: visible;
+}
+
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item > a {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.ant-menu-submenu-title .anticon {
+  margin-right: 12px;
+  line-height: 30px;
+  width: 34px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.ant-menu-dark .ant-menu-item-selected > a {
+  &::before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    top: 17px;
+    left: -4px;
+    background: #fff;
+    z-index: 4;
+  }
+}
+
+.ant-menu-dark .ant-menu-item > a {
+  margin-left: 44px;
+}
+
+.ant-menu-dark .ant-menu-item-selected > a {
+  color: #fff;
+}
+
+.ant-menu-dark.ant-menu-inline li:first-child > div {
+  margin: 0 15px;
+}
+
+.ant-menu-dark .ant-menu-submenu-selected .ant-menu-submenu-title {
+  &::before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    top: 22px;
+    left: -4px;
+    background: hsla(0, 0%, 100%, 0.6);
+    border-radius: 50%;
+  }
+}
+
+// 菜单折叠
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  padding: 10px 8px !important;
+  margin: 10px 15px 0;
+  line-height: 1.625rem;
+}
+
+.ant-menu-dark.ant-menu-vertical {
+  margin-top: 20px;
+}
+
+.ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title {
+  height: auto;
+}
+
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon {
+  font-size: 20px;
+  line-height: 30px;
+  width: 30px;
+}
+
+.ant-menu-vertical .ant-menu-submenu-title {
+  overflow: visible;
+}
+
+.ant-layout-sider-collapsed .ant-pro-sider-menu-logo {
+  padding: 0.5rem 0.7rem 1rem !important;
+
+  h1 {
+    opacity: 0;
+  }
+}

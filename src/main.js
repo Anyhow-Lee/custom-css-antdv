@@ -20,6 +20,7 @@ import './core/lazy_use' // use lazy load components
 import './permission' // permission control
 import './utils/filter' // global filter
 import './global.less' // global style
+import './custom.less' // custom style
 
 Vue.config.productionTip = false
 
@@ -38,5 +39,5 @@ new Vue({
   i18n,
   // init localstorage, vuex, Logo message
   created: bootstrap,
-  render: h => h(App)
+  render: (h) => h(App)
 }).$mount('#app')
